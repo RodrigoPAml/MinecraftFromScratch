@@ -44,7 +44,7 @@ int main()
 		cam2d->Update();
 
 		// Create and delete chunks max iterations
-		t.DrawTerrain(100, 100);
+		t.DrawTerrain(1000, 1000);
 
 		GUI::InitFrame();
 
