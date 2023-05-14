@@ -20,7 +20,7 @@ Minecraft implementation from scratch using C++ and OpenGL for advanced computer
 
 ## How to use
 
-- You can change the speed
+- You can change the movement speed
 - Change the mode from fly or walk
 - Change the mode from erase block to insert block
 - You can select 4 types of block to insert
@@ -39,4 +39,6 @@ Minecraft implementation from scratch using C++ and OpenGL for advanced computer
 
 ## Videos
 
-![Minecraft_de_pobre_2023-05-14_20-00-31_AdobeExpress](https://github.com/RodrigoPAml/MinecraftFromScratch/assets/41243039/89ae7183-fc0f-45a0-a950-f2ff03839081)
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/M17ZFMCRTgg/0.jpg)](https://www.youtube.com/watch?v=M17ZFMCRTgg "Sample 1")
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/duuMi9Sr-a8/0.jpg)](https://www.youtube.com/watch?v=duuMi9Sr-a8 "Sample 2")
