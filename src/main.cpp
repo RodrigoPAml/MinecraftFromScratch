@@ -8,6 +8,7 @@ int main()
 	srand(time(NULL));
 
 	Window::Create();
+	Window::Maximize();
 
 	Command::EnableVSync();
 	Command::EnableDepthTesting();
@@ -22,7 +23,7 @@ int main()
 
 	Camera3DPtr cam3d = Camera3DPtr(new Camera3D());
 	Camera3D::SetCurrentCamera(cam3d);
-	cam3d->SetPosition({ 10000, 0, 10000 });
+	cam3d->SetPosition({ 10000, 150, 10000 });
 
 	CameraController controller;
 

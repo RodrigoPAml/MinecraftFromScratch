@@ -32,13 +32,16 @@ namespace Core {
 		float timeUpdate = 1;
 		
 		// The current block been holded
-		glm::vec2 currBlock = { 1, 1 };
+		glm::vec2 currBlock = { 15, 19 };
 
 		// Erase block mode  enabled
 		bool eraseMode = false;
 
 		// Walk mode enabled
 		bool walkMode = false;
+
+		// Delay to put block or erase it
+		bool blockDelay = false;
 
 		// Update terrain
 		void UpdateTerrain(int maxCreateIterations, int maxDeleteIterations);

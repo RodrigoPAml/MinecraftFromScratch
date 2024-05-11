@@ -6,3 +6,5 @@
 /.vs/BuildCraft
 /imgui.ini
 /x64/Debug
+/BuildCraft/x64/Debug
+/BuildCraft/x64/Release

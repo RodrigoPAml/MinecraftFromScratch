@@ -124,8 +124,10 @@ namespace Core {
 						Base::Primitives3D::DrawCube(temp / 2.0f, { 1, 1, 1 }, { 0,0,0 }, { 1, 0, 0 }, false);
 						find = true;
 
-						if (Base::Mouse::GetMouseButtonState(Base::MouseButton::MOUSE_BUTTON_LEFT) == Base::InputAction::PRESS)
+						if (Base::Mouse::GetMouseButtonState(Base::MouseButton::MOUSE_BUTTON_RIGHT) == Base::InputAction::PRESS && !this->blockDelay)
 						{
+							this->blockDelay = true;
+
 							glm::vec2 block = this->currBlock;
 
 							if (!eraseMode)
@@ -190,6 +192,9 @@ namespace Core {
 
 		rayBox.SetOrig(Base::Camera3D::GetCurrentCamera()->GetPosition());
 		rayBox.SetDir(Base::Camera3D::GetCurrentCamera()->GetFront());
+
+		if (Base::Mouse::GetMouseButtonState(Base::MouseButton::MOUSE_BUTTON_RIGHT) == Base::InputAction::RELEASE)
+			this->blockDelay = false;
 
 		for (auto it = std::begin(this->chunks); it != std::end(this->chunks); it++)
 		{
