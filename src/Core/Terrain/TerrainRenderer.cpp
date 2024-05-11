@@ -9,6 +9,15 @@ namespace Core
 		std::string vertFile = Base::Path::GetCurrent(3) + "\\res\\shaders\\terrain\\terrain.vert";
 		std::string fragFile = Base::Path::GetCurrent(3) + "\\res\\shaders\\terrain\\terrain.frag";
 		std::string textureFile = Base::Path::GetCurrent(3) + "\\res\\texture\\atlas.jpg";
+		
+		if(!Base::Path::FileExists(vertFile))
+			vertFile = Base::Path::GetCurrent() + "\\res\\shaders\\terrain\\terrain.vert";
+
+		if (!Base::Path::FileExists(fragFile))
+			fragFile = Base::Path::GetCurrent() + "\\res\\shaders\\terrain\\terrain.frag";
+
+		if (!Base::Path::FileExists(textureFile))
+			textureFile = Base::Path::GetCurrent() + "\\res\\texture\\atlas.jpg";
 
 		this->shader = Base::ShaderPtr(new Base::Shader(vertFile, fragFile, "", true));
 

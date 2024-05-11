@@ -17,8 +17,14 @@ namespace Base {
 
 		initiliazed_ = true;
 
-		const std::string vertShader = Path::GetCurrent(3) + "\\res\\shaders\\system\\textureRender.vert";
-		const std::string fragShader = Path::GetCurrent(3) + "\\res\\shaders\\system\\textureRender.frag";
+		std::string vertShader = Path::GetCurrent(3) + "\\res\\shaders\\system\\textureRender.vert";
+		std::string fragShader = Path::GetCurrent(3) + "\\res\\shaders\\system\\textureRender.frag";
+
+		if (!Base::Path::FileExists(vertShader))
+			vertShader = Base::Path::GetCurrent() + "\\res\\shaders\\system\\textureRender.vert";
+
+		if (!Base::Path::FileExists(fragShader))
+			fragShader = Base::Path::GetCurrent() + "\\res\\shaders\\system\\textureRender.frag";
 
 		shader = ShaderPtr(new Shader(vertShader, fragShader, "", true));
 

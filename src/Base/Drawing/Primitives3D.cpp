@@ -58,8 +58,14 @@ namespace Base {
 
 		Initialized_ = true;
 
-		const std::string vertShader = Path::GetCurrent(3) + "\\res\\shaders\\system\\3DShape.vert";
-		const std::string fragShader = Path::GetCurrent(3) + "\\res\\shaders\\system\\3DShape.frag";
+		std::string vertShader = Path::GetCurrent(3) + "\\res\\shaders\\system\\3DShape.vert";
+		std::string fragShader = Path::GetCurrent(3) + "\\res\\shaders\\system\\3DShape.frag";
+
+		if (!Base::Path::FileExists(vertShader))
+			vertShader = Base::Path::GetCurrent() + "\\res\\shaders\\system\\3DShape.vert";
+
+		if (!Base::Path::FileExists(fragShader))
+			fragShader = Base::Path::GetCurrent() + "\\res\\shaders\\system\\3DShape.frag";
 
 		shader = ShaderPtr(new Shader(vertShader, fragShader, "", true));
 
