@@ -38,7 +38,7 @@ namespace Core {
 				cam->TranslateRelative(CameraMove::LEFT, speed);
 
 			if(Mouse::GetMouseButtonState(MouseButton::MOUSE_BUTTON_LEFT) == InputAction::PRESS)
-				cam->Rotate(-Mouse::GetMouseVariation().x, Mouse::GetMouseVariation().y);
+				cam->Rotate(-Mouse::GetMouseVariation().x*0.4, Mouse::GetMouseVariation().y*0.4);
 
 			cam->Update();
 		}
