@@ -11,7 +11,7 @@ Minecraft implementation from scratch using C++ and OpenGL for advanced computer
 
 ## Limitations
 
-- Dont save modifications on the map, so if the chunk despawn the modifications are lost
+- Unable to save modifications on the map, so if the chunk despawn the modifications are lost
 - Only can remove and place block from the top of a chunk (for simplicity)
 - Some shrubs and plants may change orientation when the chunk is rebuilt because of the use of randomness
   
