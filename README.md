@@ -9,6 +9,12 @@ Minecraft implementation from scratch using C++ and OpenGL for advanced computer
 - Insert blocks and remove blocks
 - Walk in the terrain
 
+## Limitations
+
+- Dont save modifications on the map, so if the chunk despawn the modifications are lost
+- Only can remove and place block from the top of a chunk (for simplicity)
+- Some shrubs and plants may change orientation when the chunk is rebuilt because of the use of randomness
+  
 ## Libs
 
 - GLFW https://github.com/glfw/glfw
