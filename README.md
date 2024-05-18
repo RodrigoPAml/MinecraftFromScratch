@@ -15,7 +15,7 @@ Minecraft implementation from scratch using C++ and OpenGL for advanced computer
 - Only can remove and place block from the top of a chunk (for simplicity of implementation)
 - Some shrubs and plants may change orientation when the chunk is rebuilt because of the use of randomness
 - Sometimes the ray don't hit the closer block, so you will remove/add in the "wrong" location (i forgot to sort that)
-- 
+
 ## Libs
 
 - GLFW https://github.com/glfw/glfw
