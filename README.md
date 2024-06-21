@@ -47,9 +47,3 @@ Minecraft implementation from scratch using C++ and OpenGL for advanced computer
 ![image](https://github.com/RodrigoPAml/MinecraftFromScratch/assets/41243039/2b9a911a-8ca1-4413-8ded-ab268cece175)
 
 ![image](https://github.com/RodrigoPAml/MinecraftFromScratch/assets/41243039/1493d2ff-4565-46e6-a996-7f6f631ad2c9)
-
-## Videos
-
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/M17ZFMCRTgg/0.jpg)](https://www.youtube.com/watch?v=M17ZFMCRTgg "Sample 1")
-
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/duuMi9Sr-a8/0.jpg)](https://www.youtube.com/watch?v=duuMi9Sr-a8 "Sample 2")
