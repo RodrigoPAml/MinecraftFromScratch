@@ -35,10 +35,13 @@ Check some results
 
 ## How to use
 
-- You can change the movement speed
-- Change the mode from fly or walk
-- Change the mode from erase block to insert block
-- You can select 4 types of block to insert
+- To move use WASD or the arrows
+- To look around drag the mouse with left click 
+- Break or insert a block use the right click
+- You can change the movement speed in the UI
+- Change the mode from fly or walk in the UI
+- Change the mode from erase block to insert block in the UI
+- You can select 4 types of block to insert in the UI
 
 ## Images
 
